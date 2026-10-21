@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Library & Learning Resource Centre</title>
+    
+
+<style>
+        /* Simple & Short Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header, section, footer {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        header { background: #1a365d; color: #fff; }
+        header a { color: #fff; margin-right: 15px; text-decoration: none; font-weight: bold; }
+        h1, h2 { color: #1a365d; margin-top: 0; }
+        header h1 { color: #fff; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th { background: #f2f2f2; }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #1a365d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background: #2b6cb0; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Central Library & LRC</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#timings">Timings</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home/Hero Section -->
+    <div class="hero" id="home">
+        <h2>Gateway to Knowledge and Discovery</h2>
+        <p>Welcome to the Central Library and Learning Resource Centre. We support the academic and research needs of our engineering students with state-of-the-art infrastructure and extensive resource banks.</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- 1. Collections Section -->
+        <section id="collections">
+            <h2>Our Collections</h2>
+            <p style="margin-bottom: 1.5rem;">Explore a vast repository of resources carefully curated to assist technical learning, academic study, and cutting-edge innovations.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Print Books</h3>
+                    <p>Over 25,000+ volumes covering Computer Science, Engineering, Basic Sciences, and Humanities fields.</p>
+                </div>
+                <div class="card">
+                    <h3>E-Resources</h3>
+                    <p>Subscribed access to IEEE Xplore, ScienceDirect, Springer, and elite academic databases accessible on campus.</p>
+                </div>
+                <div class="card">
+                    <h3>Journals & Periodicals</h3>
+                    <p>150+ print national and international journals alongside popular industry-specific tech magazines.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Timings Section -->
+        <section id="timings">
+            <h2>Library Timings</h2>
+            <p>Plan your study hours. The library operational schedule stays reliable throughout the current semester cycle.</p>
+            <table class="timing-table">
+                <thead>
+                    <tr>
+                        <th>Day Range</th>
+                        <th>Working Hours</th>
+                        <th>Circulation Desk Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Monday – Friday</strong></td>
+                        <td>8:00 AM – 8:00 PM</td>
+                        <td>8:30 AM – 5:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Saturdays</strong></td>
+                        <td>9:00 AM – 4:00 PM</td>
+                        <td>9:30 AM – 1:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sundays & Public Holidays</strong></td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3. Membership Section -->
+        <section id="membership">
+            <h2>Library Membership Registration</h2>
+            <p style="margin-bottom: 1.5rem;">All registered active institutional students are eligible for borrowing privileges. Submit this quick request form to activate your smart-card access details.</p>
+            
+            <form action="#" method="POST" onsubmit="alert('Registration form submitted successfully!'); return false;">
+                <div class="form-group">
+                    <label for="reg-no">Register Number</label>
+                    <input type="text" id="reg-no" placeholder="e.g., TRP26CS054" required>
+                </div>
+                <div class="form-group">
+                    <label for="student-name">Full Name</label>
+                    <input type="text" id="student-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dept">Department & Section</label>
+                    <select id="dept" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="cse-a">CSE - 'A' Section</option>
+                        <option value="cse-b">CSE - 'B' Section</option>
